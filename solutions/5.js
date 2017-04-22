@@ -9,7 +9,7 @@ const sortMerge = (array) => {
   const firstHalf = array.slice(0, middle);
   const secondHalf = array.slice(middle, array.length);
   return mergeTogether(sortMerge(firstHalf), sortMerge(secondHalf));
-}
+};
 
 const mergeTogether = (firstHalf, secondHalf) => {
     let sortedResult = [];
@@ -27,7 +27,7 @@ const mergeTogether = (firstHalf, secondHalf) => {
     sortedResult.push(secondHalf.shift());
   }
   return sortedResult;
-}
+};
 
 module.exports = {
   sortMerge

@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const tree = require('../tree');
+const tree = require('../solutions/6');
 const Node = tree.node;
 
 describe('tree', () => {
@@ -8,4 +8,3 @@ describe('tree', () => {
     expect(node.value).to.equal(2);
   });
 });
-
