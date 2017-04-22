@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const sort = require('../sort');
+const sort = require('../solutions/5');
 const sortMerge = sort.sortMerge;
 
 describe('sort strings', () => {
