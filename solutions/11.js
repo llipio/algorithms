@@ -4,18 +4,18 @@
 // Output: [1,8,7]
 
 const solution = (input) => {
-	if (input == null) {
+	if (!input) {
 		return [];
 	}
 	const seen = {};
-	const result = {};
+	const result = new Set();
 	input.forEach((k) => {
 		if (seen[k]) {
-			result[k] = true;
+			result.add(k);
 		}
 		seen[k] = true;
 	})
-	return Object.keys(result);
+	return [...result];
 };
 
 module.exports = {
