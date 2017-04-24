@@ -1,7 +1,7 @@
 // vdewinter
 // Create a function that returns only the values of an array that are repeated
 // Input: [1,8,8,8,7,7,1,3]
-// Output: [1,8,7]
+// Output: [8,7,1]
 
 const solution = (input) => {
 	if (!input) {
