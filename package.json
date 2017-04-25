@@ -3,7 +3,8 @@
   "description": "algorithm practice",
   "version": "0.0.0",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -w"
+    "test": "./node_modules/mocha/bin/mocha -w",
+    "twin": "node ./node_modules/mocha/bin/mocha -w"
   },
   "dependencies": {
     "chai": "^3.5.0",
