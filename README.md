@@ -13,7 +13,8 @@
     // solution implementation ...
   }
 ```
-***step3***: Run `npm run test` to make sure your solution works.
+***step3***: Run `npm run test` to make sure your solution works. If running on Windows, run `npm run twin`.
+
 
 ***step4***: create a pull request to `master branch` with your solution and assign a reviewer (note: if someone has already worked on the problem, pick that person as the reviewer, otherwise just randomly pick a person to review your solution)
 
