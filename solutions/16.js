@@ -1,5 +1,5 @@
 //msach22
-// should return true if the input array has duplicant element values
+// should return true if the input array has duplicate values and false if it doesn't
 
 const hasDuplicates = (array) => {
   let map = {};
@@ -11,8 +11,6 @@ const hasDuplicates = (array) => {
   };
   return false;
 }
-
-array = [1,2,3];
 
 module.exports = {
   hasDuplicates
