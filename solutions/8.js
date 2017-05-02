@@ -1,7 +1,7 @@
-// Manik Sachdeva
+// Manik Sachdeva: msach22
 // create a function that returns in reverse
 
-const reverseString = (string) => {
+const solution = (string) => {
   let newString = '';
   for (let i = string.length - 1; i >= 0; i--) {
     newString += string[i];
@@ -10,5 +10,5 @@ const reverseString = (string) => {
 };
 
 module.exports = {
-  reverseString
+  solution
 };

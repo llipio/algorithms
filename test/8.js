@@ -1,11 +1,11 @@
 const expect = require('chai').expect;
-const reverse = require('../solutions/8');
-const reverseString = reverse.reverseString;
+let solution = require('../solutions/8').solution;
+// solution = require('./yourSolution').solution;
 
 describe('reverse String', () => {
   it('should reverse a string in reverse', () => {
-    const string = "react";
+    const actual = "react";
     const expected = "tcaer";
-    expect(reverseString(string)).to.equal(expected);
+    expect(solution(actual)).to.equal(expected);
   });
 });

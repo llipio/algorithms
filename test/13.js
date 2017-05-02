@@ -1,15 +1,12 @@
 const expect = require('chai').expect;
-const reverse = require('../solutions/13').solution;
+let solution = require('../solutions/13').solution;
+// solution = require('./yourSolution').solution;
 
 describe('reverse String', () => {
   it('should return true if input string is a palindrome', () => {
-  	const result1 = reverse("racecar");
-    expect(result1).to.equal(true);
-
-    const result2 = reverse("abba");
-    expect(result2).to.equal(true);
-
-    const result3 = reverse("palindrome");
-    expect(result3).to.equal(false);
+    expect(solution("racecar")).to.equal(true);
+  });
+  it('should return true if input string is a palindrome', () => {
+    expect(solution("palindrome")).to.equal(false);
   });
 });

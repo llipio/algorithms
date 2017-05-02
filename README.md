@@ -8,11 +8,13 @@
 
 ***step1***: Clone the (llipio/algorithms) repository locally
 
-***step2***: Pick an issue that you would like to work on
+***step2***: To install all of the dependencies, run `npm install`
 
-***step3***: Add your solution to the `yourSolution.js` file in the solutions folder.
+***step3***: Pick an issue that you would like to work on
 
-***step4***: To test your function, import your solution to the corresponding issue and simply add .only() to the test and run `npm run test`. The test should rerun automatically thereafter.
+***step4***: Add your solution to the `yourSolution.js` file in the solutions folder.
+
+***step5***: To test your function, import your solution to the corresponding issue and simply add .only() to the test and run `npm run test`. The test should rerun automatically thereafter.
 
 ### Add new problems
 
@@ -32,7 +34,7 @@ If a file already exists, only add your solution the top of the file if it's uni
 
 ```javascript
   // Bill Ma
-  const solutionToProblem = () => {
+  const solution = () => {
     // solution implementation ...
   }
 ```
