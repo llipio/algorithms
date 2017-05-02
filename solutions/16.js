@@ -1,7 +1,7 @@
-//msach22
+//Manik Sachdeva: msach22
 // should return true if the input array has duplicate values and false if it doesn't
 
-const hasDuplicates = (array) => {
+const solution = (array) => {
   let map = {};
   for (let i = 0; i < array.length; i++) {
     if (map[array[i]]) {
@@ -13,5 +13,5 @@ const hasDuplicates = (array) => {
 }
 
 module.exports = {
-  hasDuplicates
+  solution
 };

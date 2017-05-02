@@ -1,7 +1,6 @@
 // vdewinter
 // Return true if input string is a palindrome
 
-
 const solution = (str) => {
 	const strLen = str.length;
 	const midpoint = Math.floor(strLen / 2);

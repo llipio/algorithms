@@ -1,14 +1,14 @@
-// Manik Sachdeva
+// Manik Sachdeva: msach22
 // create a sorting function that allows you to sort numbers or text in accending order
 
-const sortMerge = (array) => {
+const solution = (array) => {
   if (array.length < 2) {
     return array;
   }
   const middle = parseInt(array.length / 2);
   const firstHalf = array.slice(0, middle);
   const secondHalf = array.slice(middle, array.length);
-  return mergeTogether(sortMerge(firstHalf), sortMerge(secondHalf));
+  return mergeTogether(solution(firstHalf), solution(secondHalf));
 };
 
 const mergeTogether = (firstHalf, secondHalf) => {
@@ -30,5 +30,5 @@ const mergeTogether = (firstHalf, secondHalf) => {
 };
 
 module.exports = {
-  sortMerge
+  solution
 };
