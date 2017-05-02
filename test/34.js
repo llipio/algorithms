@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/34').solution;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('number of elements', () => {
   it('should the occurance of a number in the array', () => {

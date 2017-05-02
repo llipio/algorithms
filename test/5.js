@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/5').solution;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('sort arrays', () => {
   it('array should have names in ascending order', () => {
