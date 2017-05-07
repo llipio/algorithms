@@ -3,6 +3,7 @@
 // input: 'all your base are belong to us', 'ase ar'
 // output: true
 
+// Zach Nagatani
 const solution = (fullString, subString) => {
     return fullString.includes(subString);
 };
