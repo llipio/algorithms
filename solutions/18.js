@@ -8,21 +8,36 @@
 /**
  * Finds and returns the missing number from an array of consecutively increasing numbers
  * @param {Number[]} arr - An array of consecutively increasing numbers
- * @returns {Number} missingNum - the number missing from the input array
+ * @returns {Number|null} missingNum - the number missing from the input array or null if none is found
+ */
+// const solution = arr => {
+//     let missingNum = null,
+//         i = 0;
+
+//     while (!missingNum && i < arr.length - 1) {
+//         const current = arr[i],
+//               next = arr[i + 1];
+
+//         missingNum = next === current + 1 ? missingNum : next - 1;
+//         i++;
+//     }
+
+//     return missingNum;
+// };
+
+/**
+ * Finds and returns the missing number from an array of consecutively increasing numbers
+ * @param {Number[]} arr - An array of consecutively increasing numbers
+ * @returns {Number|null} missingNum - the number missing from the input array or null if none is found
  */
 const solution = arr => {
-    let missingNum = null,
-        i = 0;
+    let i = 1;
 
-    while (!missingNum && i < arr.length - 1) {
-        const current = arr[i],
-              next = arr[i + 1];
-
-        missingNum = next === current + 1 ? missingNum : next - 1;
+    while (i < arr.length && arr[i - 1] + 1 === arr[i]) {
         i++;
     }
 
-    return missingNum;
+    return i === arr.length ? null : arr[i - 1] + 1;
 };
 
 module.exports = {
