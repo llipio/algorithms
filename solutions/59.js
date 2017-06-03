@@ -1,4 +1,4 @@
-//Takes a number x.
+//Input a number x into the 'solution' function.
 //Returns false if x<2.
 //Returns false if x is divisible by number not 1 and x when x>2.
 //Otherwise return true.
@@ -14,8 +14,8 @@ const solution = (x) => {
   for(let i=x-1; i>=2; i--){
     if(x % i === 0 ){
       return false;
-    };
-  };
+    }
+  }
   return true;
 };
 module.exports = {

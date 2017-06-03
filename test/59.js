@@ -12,11 +12,10 @@ describe('prime numbers', () => {
   it('-1 should not be a prime number', () => {
     expect(solution(-1)).eql(false);
   });
-
   it('0 should not be a prime number', () => {
     expect(solution(0)).eql(false);
   });
-  it('14 should not be a prime number', () => {
+  it('15 should not be a prime number', () => {
   expect(solution(15)).eql(false);
   });
 });
