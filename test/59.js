@@ -16,7 +16,7 @@ describe('prime numbers', () => {
     expect(solution(0)).eql(false);
   });
   it('15 should not be a prime number', () => {
-  expect(solution(15)).eql(false);
+    expect(solution(15)).eql(false);
   });
 });
 

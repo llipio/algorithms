@@ -1,18 +1,20 @@
-//Input a number x into the 'solution' function.
-//Returns false if x<2.
-//Returns false if x is divisible by number not 1 and x when x>2.
-//Otherwise return true.
-//input [1,13,-1,0,14]
-//output [false,true,false,false,false]
+// Finding prime numbers.
+// Takes in a number, returns true if the number is prime, false otherwise.
+// input: 1
+// output: false
 
 // Solution by Colin Xie @ColinX13
-
-const solution = (x) => {
-  if(x<2){
+/*
+ * Returns true or false based on whether the number is prime or not prime
+ * @param {number} num - a number that is being input
+ * @return {boolean} isPrime - the number is prime
+*/ 
+const solution = (num) => {
+  if(num < 2){
     return false;
   }
-  for(let i=x-1; i>=2; i--){
-    if(x % i === 0 ){
+  for(let factor = num - 1; factor >= 2; factor--){
+    if(num % factor === 0 ){
       return false;
     }
   }
