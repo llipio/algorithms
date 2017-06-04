@@ -17,16 +17,15 @@ const solution = (arr, total) => {
   if (total === 0) {
     return 0;
   }
-
-  let min = total;
-  arr.forEach((denom) => {
-    if (total - denom >= 0) {
-      min = Math.min(1 + solution(arr, total - denom), min);
-    }  
-  });
-  return min;
+  
+  return arr.reduce( (acc, denomination) => {
+    if (total - denomination >= 0) {
+      return Math.min(acc, 1 + solution(arr, total - denomination));
+    }
+    return acc;
+  }, total);
 };
 
 module.exports = {
-    solution
+  solution
 };
