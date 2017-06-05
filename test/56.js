@@ -18,5 +18,8 @@ describe('return smallest number of coins required to return the change', () => 
   it('hard case [1,2,3,6,7], total=12', () => {
     expect(solution([1,2,3,6,7], 12)).to.equal(2);
   });
+  it('hard case [1,2,3,7], total=9', () => {
+    expect(solution([1,2,3,7], 9)).to.equal(2);
+  });
 });
 
