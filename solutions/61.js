@@ -12,7 +12,7 @@
  * @return {number} factor - the greatest common factor for num1 and num2
 */
 const solution = (num1, num2) => {
-  for(factor = num1; factor >= 1; factor--){ 
+  for(let factor = num1; factor >= 1; factor--){ 
     if(num1 % factor === 0 && num2 % factor === 0){
       return factor;
     }
