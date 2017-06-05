@@ -1,5 +1,6 @@
 const expect = require('chai').expect;
 const solution = require('../solutions/34.js').solution;
+const solution1 = require('../solutions/34.js').solution;
 // solution = require('../yourSolution').solution;
 
 describe('return number of repeating elements', () => {
