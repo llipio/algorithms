@@ -1,5 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/61').solution;
+let solution1 = require('../solutions/61').solution;
 // solution = require('./yourSolution').solution;
 
 describe('greatest common denominator', () => {
