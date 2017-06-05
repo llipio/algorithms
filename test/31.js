@@ -12,7 +12,10 @@ describe('longest string in an array', () => {
   it('the longest string in [wait,see,us] is wait', () => {
     expect(solution(['wait','see','us'])).eql('wait');
   })
-  it('the longest string in [shout,basic,lead]', () => {
+  it('the longest string in [shout,basic,lead] is shout', () => {
     expect(solution(['shout','basic','lead'])).eql('shout');
+  })
+  it('the longest string in [just] is just', () => {
+    expect(solution(['just'])).eql('just');
   })
 });
