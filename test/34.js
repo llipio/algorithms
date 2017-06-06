@@ -16,5 +16,18 @@ describe('return number of repeating elements', () => {
   it('hardest case', () => {
     expect(solution([5,5,3,2,3,2,5,5],5)).to.equal(4);
   });
+  it('simple case', () => {
+    expect(solution1([2],2)).to.equal(1);
+  });
+  it('hard case', () => {
+    expect(solution1([3,2],1)).to.equal(0);
+  });
+  it('harder case', () => {
+    expect(solution1([3,2,3,2],2)).to.equal(2);
+  })
+  it('hardest case', () => {
+    expect(solution1([5,5,3,2,3,2,5,5],5)).to.equal(4);
+  });
+
 });
 
