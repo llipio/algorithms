@@ -29,6 +29,8 @@ const mergeTogether = (firstHalf, secondHalf) => {
   return sortedResult;
 };
 
+// Daniel Soper
+// sort an array of strings or numbers in ascending order
 const solution2  = (arr) => {
   let max;
   if (arr.length === 1){
@@ -46,5 +48,6 @@ const solution2  = (arr) => {
   return arr 
 }
 module.exports = {
-  solution
+  solution,
+  solution2
 };
