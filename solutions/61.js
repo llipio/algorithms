@@ -19,49 +19,43 @@ const solution = (num1, num2) => {
   }
 };
 
-const solution1 = (num1, num2) => {
-  if (num1 > num2){
-    let long = num1;
-    let short = num2;
-  } else {
-    let long = num2;
-    let short = num1;
-  };
-  
+const solution1 = (num1, num2) => { 
   let num1Array = [];
   let num2Array = [];
   let i = 1;
   let j = 1;
   
-  while (i < long) {
-    if (long%i === 0){
+  while (i <= num1) {
+    if (num1%i === 0){
       num1Array.push(i);
       i++;
     } else {
       i++;
     }
   };
-
-  while (j < short) {
-    if (short%i === 0){
+  
+  while (j <= num2) {
+    if (num2%j === 0){
       num2Array.push(j);
       j++;
     } else {
       j++;
     }
   };
-
-  let k, l = 0;
+  
+  let k = 0;
   let commonNumbers = [];
-  for (k; k < num1Array.length; k++){
-    for (l; l < num2Array.length; l++){
-      if (num1Array[k] === num2Array[l]){
-        commonNumbers.push(num1Array[k]);
-      }
-    }
+ 
+  while (k < num2Array.length){
+    if (num1Array.indexOf(num2Array[k]) === -1){
+      k++;
+    } else {
+      commonNumbers.push(num2Array[k]);
+      k++;
+    };
   };
-
-  let GCD = Math.max(commonNumbers);
+  
+  let GCD = Math.max.apply(Math, commonNumbers);
   return GCD;
 };
 
