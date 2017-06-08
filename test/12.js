@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
-let solution = require('../solutions/12').solution,
-    solution2 = require('../solutions/12').solution2;
-//solution = require('../yourSolution').solution;
+let solution = require('../solutions/12').solution;
+let solution2 = require('../solutions/12').solution2;
+// solution = require('../yourSolution').solution;
 
 describe('array of random numbers', () => {
   it('should return an array with length n', () => {
@@ -13,7 +13,7 @@ describe('array of random numbers', () => {
   });
 
   it('should contain only unique values', () => {
-    let arr = solution(20),
+    let arr = solution(20);
         result = new Set(arr).size === arr.length;
     expect(result).to.equal(true);
 

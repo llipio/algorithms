@@ -4,9 +4,9 @@ let solution = require('../solutions/13').solution;
 
 describe('reverse String', () => {
   it('should return true if input string is a palindrome', () => {
-    expect(solution("racecar")).to.equal(true);
+    expect(solution('racecar')).to.equal(true);
   });
   it('should return true if input string is a palindrome', () => {
-    expect(solution("palindrome")).to.equal(false);
+    expect(solution('palindrome')).to.equal(false);
   });
 });

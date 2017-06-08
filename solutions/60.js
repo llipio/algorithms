@@ -11,8 +11,8 @@
 */
 const solution = (x) => {
   let sum = 0;
-  for(let i = x; i >= 1; i--){
-    if(x % i === 0){
+  for (let i = x; i >= 1; i--) {
+    if (x % i === 0) {
       sum = sum + i;
     }
   }
@@ -20,6 +20,6 @@ const solution = (x) => {
 };
 
 module.exports = {
-  solution
+  solution,
 };
 

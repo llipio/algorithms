@@ -8,16 +8,18 @@
 /**
  * Returns the minimum number of coins required to make up the given total value
  * Each coin denomination can be used as many times as needed.
- * @param {number[]} arr - An array of coin denomination numbers (1 is always included)
- * @param {number} total - The total value 
- * @returns {number} min - The mininum number of coins which add up to the toal value
+ * @param {number[]} arr - An array of coin denomination numbers
+ * (1 is always included)
+ * @param {number} total - The total value
+ * @returns {number} min - The mininum number of coins which
+ * add up to the toal value
  */
 
 const solution = (arr, total) => {
   if (total === 0) {
     return 0;
   }
-  
+
   return arr.reduce( (acc, denomination) => {
     if (total - denomination >= 0) {
       return Math.min(acc, 1 + solution(arr, total - denomination));
@@ -27,5 +29,5 @@ const solution = (arr, total) => {
 };
 
 module.exports = {
-  solution
+  solution,
 };
