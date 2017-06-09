@@ -4,8 +4,8 @@ solution = require('../yourSolution').solution;
 
 describe('reverse String', () => {
   it('should reverse a string in reverse', () => {
-    const actual = "react";
-    const expected = "tcaer";
+    const actual = 'react';
+    const expected = 'tcaer';
     expect(solution(actual)).to.equal(expected);
   });
  it('should reverse a string in reverse', () => {

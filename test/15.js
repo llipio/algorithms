@@ -8,7 +8,8 @@ describe('is substring', () => {
     expect(result).to.equal(true);
   });
 
-  it('should return false is second input is NOT a substring of first input', () => {
+  it('should return false is second input is NOT a substring of first input',
+    () => {
     const result = solution('i love tacos more than you', 'carne asada');
     expect(result).to.equal(false);
   });
