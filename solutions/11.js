@@ -14,10 +14,10 @@ const solution = (input) => {
 			result.add(k);
 		}
 		seen[k] = true;
-	})
+	});
 	return [...result];
 };
 
 module.exports = {
-  solution
+  solution,
 };

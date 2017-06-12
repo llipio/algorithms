@@ -1,20 +1,21 @@
 // Array of Random Numbers
-// Create a function that takes in an input n, and returns an array of n unique values.
+// Create a function that takes in an input n,
+// and returns an array of n unique values.
 // input: 5
 // output: [24,28,1,2,19]
 
 // Zach Nagatani
 
-/**
+/*
  * This approach isn't "random", but it does return unique values every time
  * @return Returns an array of unique values whose length is equal to n.
  * @param {Number} n - an integer representing the length of the output array
  */
-const solution = n => {
-    let num = n,
+const solution = (n) => {
+    let num = n;
         arr = [];
 
-    while(num > 0) {
+    while (num > 0) {
         arr.push(num);
         num--;
     }
@@ -22,14 +23,14 @@ const solution = n => {
     return arr;
 };
 
-/**
+/*
  * This approach is "random" and uses Array.includes to check for
  * uniqueness before pushing into the array.
  * @return Returns an array of unique values whose length is equal to n.
  * @param {Number} n - an integer representing the length of the output array
  */
-const solution2 = n => {
-    let num = n,
+const solution2 = (n) => {
+    let num = n;
         arr = [];
 
     const generateRandomNum = () => {
@@ -56,5 +57,5 @@ const solution2 = n => {
 
 module.exports = {
     solution,
-    solution2
+    solution2,
 };

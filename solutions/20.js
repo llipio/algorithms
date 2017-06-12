@@ -5,12 +5,13 @@
 
 // Zach Nagatani
 
-/**
+/*
  * Uses a greedy approach to track the largestSum so far, updating as necessary
  * @param {Number[]} arr - an array of numbers
- * @returns {Number} largestSum - the largestSum of two consecutive numbers in arr
+ * @returns {Number} largestSum - the largestSum of two
+ * consecutive numbers in arr
  */
-const solution = arr => {
+const solution = (arr) => {
     let largestSum = arr[0] + arr[1];
 
     for (let i = 1; i < arr.length; i++) {
@@ -22,5 +23,5 @@ const solution = arr => {
 };
 
 module.exports = {
-    solution
+    solution,
 };

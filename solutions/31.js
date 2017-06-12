@@ -12,8 +12,8 @@
 const solution = (arr) => {
   let maxLength = 0;
   let word = 0;
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i].length > maxLength){
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > maxLength) {
       maxLength = arr[i].length;
       word = arr[i];
     }
@@ -21,5 +21,5 @@ const solution = (arr) => {
   return word;
 };
 module.exports = {
-  solution
+  solution,
 };

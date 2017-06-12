@@ -5,6 +5,7 @@
 
 // Solution #0 by Colin Xie @ColinX13
 // Solution #1 by Maricris Bonzo @seemcat
+
 /**
  * Factor is determined when both remainders of num1 and num2 are 0 when factor is divided from them.
  * @param num1 - the first number input
@@ -12,8 +13,8 @@
  * @return {number} factor - the greatest common factor for num1 and num2
 */
 const solution = (num1, num2) => {
-  for(let factor = num1; factor >= 1; factor--){ 
-    if(num1 % factor === 0 && num2 % factor === 0){
+  for (let factor = num1; factor >= 1; factor--) {
+    if (num1 % factor === 0 && num2 % factor === 0) {
       return factor;
     }
   }
