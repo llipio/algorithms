@@ -1,5 +1,6 @@
-//Manik Sachdeva: msach22
-// should return true if the input array has duplicate values and false if it doesn't
+// Manik Sachdeva: msach22
+// should return true if the input array has duplicate
+// values and false if it doesn't
 
 const solution = (array) => {
   let map = {};
@@ -10,8 +11,8 @@ const solution = (array) => {
     map[array[i]] = true;
   };
   return false;
-}
+};
 
 module.exports = {
-  solution
+  solution,
 };

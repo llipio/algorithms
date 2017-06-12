@@ -1,5 +1,6 @@
 // Manik Sachdeva: msach22
-// create a sorting function that allows you to sort numbers or text in accending order
+// create a sorting function that allows you to
+// sort numbers or text in accending order
 
 const solution = (array) => {
   if (array.length < 2) {
@@ -29,6 +30,24 @@ const mergeTogether = (firstHalf, secondHalf) => {
   return sortedResult;
 };
 
+// Daniel Soper
+// sort an array of strings or numbers in ascending order
+const solution2 = (arr) => {
+  if (arr.length === 1) {
+    return arr;
+  }
+  for (i=0; i < arr.length; i++) {
+    for (j=i+1; j< arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  return arr;
+};
 module.exports = {
-  solution
+  solution,
+  solution2,
 };

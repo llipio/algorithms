@@ -1,10 +1,9 @@
-//Daniel
-//Number of repeating elements in an array
-
+// Daniel
+// Number of repeating elements in an array
 const solution = (arr, k) => {
   let total = 0;
   for (i=0; i < arr.length; i++) {
-    if (arr[i] === k){
+    if (arr[i] === k) {
       total++;
     }
    }
@@ -12,7 +11,6 @@ const solution = (arr, k) => {
 };
 
 // Maricris Bonzo
-
 const solution1 = (array, num) => {
   let i = 0;
   let numOfTimes = 0;
@@ -31,4 +29,5 @@ const solution1 = (array, num) => {
 module.exports = {
   solution,
   solution1
-};
+ };
+

@@ -5,5 +5,5 @@ const yourSolution = () => {
 };
 
 module.exports = {
-  yourSolution
+  yourSolution,
 };
