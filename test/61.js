@@ -1,5 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/61').solution;
+let solution1 = require('../solutions/61').solution1;
 // solution = require('./yourSolution').solution;
 
 describe('greatest common denominator', () => {
@@ -13,12 +14,12 @@ describe('greatest common denominator', () => {
     expect(solution(50, 60)).eql(10);
   });
   it('the gcd for 40 and 20 is 20', () => {
-    expect(solution(40, 20)).eql(20);
+    expect(solution1(40,20)).eql(20);
   });
   it('the gcd for 20 and 40 is 20', () => {
-    expect(solution(20, 40)).eql(20);
+    expect(solution1(20,40)).eql(20);
   });
   it('the gcd for 1 and 4 is 1', () => {
-    expect(solution(1, 4)).eql(1);
+    expect(solution1(1,4)).eql(1);
   });
 });
