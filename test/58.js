@@ -1,22 +1,9 @@
 const expect = require('chai').expect;
 const solution = require('../solutions/58.js').solution;
+const Employee = require('../solutions/58.js').Employee;
 // solution = require('../yourSolution').solution;
 
-describe('return smallest number of coins required to return the change', () => {
-  class Employee {
-    constructor(funVal, staffArray=[]) {
-      this.funVal = funVal;
-      this.staff = [];
-      this.addStaff(staffArray);
-    }
-
-    addStaff(staffArray) {
-      staffArray.forEach((staff) => {
-        this.staff.push(staff);
-      });
-    }
-  }
-
+describe('return an array of employees that creates the max fun', () => {
   let emp1 = new Employee(1);
   let emp2 = new Employee(5);
   let emp3 = new Employee(11);

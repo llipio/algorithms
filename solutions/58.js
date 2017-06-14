@@ -11,6 +11,20 @@
  * @param {Employee} emp - an Employee with fun value and a list of his staff
  * @returns {Employee []]} list - Array of employees that creates the maximum fun
  */
+class Employee {
+  constructor(funVal, staffArray=[]) {
+    this.funVal = funVal;
+    this.staff = [];
+    this.addStaff(staffArray);
+  }
+
+  addStaff(staffArray) {
+    staffArray.forEach((staff) => {
+      this.staff.push(staff);
+    });
+  }
+}
+
 
 const solution = (emp) => {
   if(!emp) {
@@ -21,32 +35,28 @@ const solution = (emp) => {
     return [emp];
   }
 
-  let funValWithoutEmp = 0;
   let funStaffListWithoutEmp = [];
-  emp.staff.forEach((staff) => {
-    solution(staff).forEach((emp) => {
-      funValWithoutEmp += emp.funVal;
-      funStaffListWithoutEmp.push(emp);
-    });
-  });
+  let funValWithoutEmp = emp.staff.reduce((funVal, staff) => {
+    let staffList = solution(staff);
+    funStaffListWithoutEmp = funStaffListWithoutEmp.concat(staffList);
+    return staffList.reduce((acc, emp) => (acc + emp.funVal), funVal);
+  }, 0);
 
   let funValWithEmp = emp.funVal;
   let funStaffListWithEmp = [emp];
   emp.staff.forEach((staff) => {
-    staff.staff.forEach((staffstaff) => {
-      solution(staffstaff).forEach((emp) => {
-        funValWithEmp += emp.funVal;
-        funStaffListWithEmp.push(emp);
-      });
-    });
+    funValWithEmp = staff.staff.reduce((funVal, staff) => {
+      let staffList = solution(staff);
+      funStaffListWithEmp = funStaffListWithEmp.concat(staffList);
+      return staffList.reduce((acc, emp) => (acc + emp.funVal), funVal);
+    }, funValWithEmp);
   });
 
-  if (funValWithoutEmp > funValWithEmp) {
-    return funStaffListWithoutEmp;
-  }
-  return funStaffListWithEmp;
+  return funValWithoutEmp > funValWithEmp ?
+    funStaffListWithoutEmp : funStaffListWithEmp;
 };
 
 module.exports = {
+  Employee,
   solution
 };
