@@ -1,12 +1,11 @@
 //Rahul Kalra
 //Checking to see if the string is palindrome
-
-const solution = (palindomeInput) =>{
+const solution2 = (palindromeInput) =>{
   let reverse = "";
-  for(let i = palindomeInput.length - 1; i >= 0; i--){
-    reverse += palindomeInput[i];
+  for(let i = palindromeInput.length - 1; i >= 0; i--){
+    reverse += palindromeInput[i];
   }
-  if(reverse === palindomeInput){
+  if(reverse === palindromeInput){
     return true;
   }
   return false;
