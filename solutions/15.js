@@ -9,6 +9,18 @@ const solution = (fullString, subString) => {
     return fullString.includes(subString);
 };
 
+// Colin Xie
+const solution1 = (fullString, subString) => {
+  for(let i = 0; i < fullString.length; i++){
+    let subFull = fullString.substring(i,i + subString.length);
+    if(subFull  === subString){
+      return true;
+    }
+  }
+  return false;
+};
+
 module.exports = {
   solution,
+  solution1,
 };
