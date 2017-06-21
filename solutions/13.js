@@ -1,3 +1,16 @@
+//Rahul Kalra
+//Checking to see if the string is palindrome
+const solution2 = (palindromeInput) =>{
+  let reverse = "";
+  for(let i = palindromeInput.length - 1; i >= 0; i--){
+    reverse += palindromeInput[i];
+  }
+  if(reverse === palindromeInput){
+    return true;
+  }
+  return false;
+};
+
 // vdewinter
 // Return true if input string is a palindrome
 
@@ -15,4 +28,6 @@ const solution = (str) => {
 
 module.exports = {
   solution,
+  solution2
 };
+
