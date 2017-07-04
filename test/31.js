@@ -20,19 +20,19 @@ describe('longest string in an array', () => {
   it('the longest string in [just] is just', () => {
     expect(solution(['just'])).eql('just');
   });
-  it.only('the longest string in [hi,hello,hola] is hello', () => {
+  it('the longest string in [hi,hello,hola] is hello', () => {
     expect(solution1(['hi','hello','hola'])).eql('hello');
   })
-  it.only('the longest string in [is, whether, approximately] is approximately', () => {
+  it('the longest string in [is, whether, approximately] is approximately', () => {
     expect(solution1(['is','whether','approximately'])).eql('approximately');
   })
-  it.only('the longest string in [wait,see,us] is wait', () => {
+  it('the longest string in [wait,see,us] is wait', () => {
     expect(solution1(['wait','see','us'])).eql('wait');
   })
-  it.only('the longest string in [shout,basic,lead] is shout', () => {
+  it('the longest string in [shout,basic,lead] is shout', () => {
     expect(solution1(['shout','basic','lead'])).eql('shout');
   })
-  it.only('the longest string in [just] is just', () => {
+  it('the longest string in [just] is just', () => {
     expect(solution1(['just'])).eql('just');
   })
 });
