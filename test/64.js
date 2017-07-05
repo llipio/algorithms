@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/64').solution;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('reverse word order in a sentence', () => {
   it('should reverse the word order', () => {

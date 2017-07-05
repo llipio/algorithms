@@ -1,5 +1,6 @@
 const expect = require('chai').expect;
 const tree = require('../solutions/6');
+// tree = require('../yourSolution');
 const Node = tree.node;
 
 describe('tree', () => {

@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/8').solution;
 let solution1 = require('../solutions/8').solution1;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('reverse String', () => {
   it('should reverse a string in reverse', () => {

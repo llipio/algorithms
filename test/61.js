@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/61').solution;
 let solution1 = require('../solutions/61').solution1;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('greatest common denominator', () => {
   it('the gcd for 16 and 24 is 8', () => {

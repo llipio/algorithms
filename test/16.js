@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/16').solution;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('check duplicates', () => {
   it('should return true since array has duplicates', () => {

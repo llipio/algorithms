@@ -1,7 +1,18 @@
-// Name
-// Problem Description
+// [ProblemTitle]
+// [OneLineProblemDescription]
+// Input:
+// Output:
+
+// Solution by [yourName]
+
+/**
+ * [DetailedDescription]
+ * @param
+ * @returns
+ */
 
 const solution = () => {
+  return '';
 };
 
 module.exports = {

@@ -1,6 +1,7 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/5').solution;
 let solution2 = require('../solutions/5').solution2;
+// solution = require('../yourSolution').solution;
 
 describe('sort arrays', () => {
   // solution tests

@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/31').solution;
 let solution1 = require('../solutions/31').solution1;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('longest string in an array', () => {
   it('the longest string in [hi,hello,hola] is hello', () => {
