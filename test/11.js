@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/11').solution;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('repeating elements', () => {
   it('should return repeating elements of an array', () => {

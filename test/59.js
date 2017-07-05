@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/59').solution;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('prime numbers', () => {
   it('1 should not be a prime number', () => {

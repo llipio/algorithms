@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 let solution = require('../solutions/60').solution;
-// solution = require('./yourSolution').solution;
+// solution = require('../yourSolution').solution;
 
 describe('sum of factors', () => {
   it('sum of the factors of 2 is 3', () => {
