@@ -4,14 +4,14 @@ const solution = (arr) => {
   if (arr.length === 0) {
     return arr;
   }
-  let a = arr.shift();
-  if (a.length) {
-  a.forEach((elem) => {
-    arr.push(elem);
-  });
+  let elem = arr.shift();
+  if (elem.length) {
+    elem.forEach((elem) => {
+      arr.push(elem);
+    });
     solution(arr);
   } else {
-    solution(arr).push(a);
+    solution(arr).push(elem);
   }
   return arr;
 };
