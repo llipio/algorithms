@@ -37,16 +37,14 @@ const solution2 = (arr, value) => {
   arr.forEach((coin)=> {
   let childCoins = 0;
     if (value - coin > 0) {
-      childCoins = solution(arr, value - coin);
+      childCoins = solution2(arr, value - coin);
     }
-    if ( childCoins < currentMin) {
-      currentMin = childCoins;
-    }
+    currentMin = Math.min(currentMin, childCoins);
   });
   return currentMin + 1;
 };
 
 module.exports = {
   solution,
-  solution2
+  solution2,
 };
