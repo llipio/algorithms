@@ -27,7 +27,24 @@ const solution = (arr, total) => {
     return acc;
   }, total);
 };
+// return min number of coins
+// daniel s.
+const solution2 = (arr, value) => {
+  if (value === 0) {
+    return 0;
+  };
+  let currentMin = value;
+  arr.forEach((coin)=> {
+  let childCoins = 0;
+    if (value - coin > 0) {
+      childCoins = solution2(arr, value - coin);
+    }
+    currentMin = Math.min(currentMin, childCoins);
+  });
+  return currentMin + 1;
+};
 
 module.exports = {
   solution,
+  solution2,
 };
